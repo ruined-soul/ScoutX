@@ -79,14 +79,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Aira to your group 💫", url="t.me/scoutX_Bot?startgroup=true"
+            text="💫 Add ScoutX to your group 💫", url="t.me/scoutX_Bot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [X aira](https://telegra.ph/file/8359843bb6bc461376e3a.jpg)
+*Main Commands :* [ScoutX](https://telegra.ph/file/5447948a779825eb3f80a.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
