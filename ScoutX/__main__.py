@@ -79,7 +79,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Aira to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="💫 Add Aira to your group 💫", url="t.me/scoutX_Bot?startgroup=true"
         ),
     ],
 ]
@@ -118,7 +118,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("DaisyX.modules." + module_name)
+    imported_module = importlib.import_module("ScoutX.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -356,7 +356,7 @@ def help_button(update, context):
 
 
 @run_async
-def DaisyX_about_callback(update, context):
+def ScoutX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
@@ -418,7 +418,7 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
+            text=f"*{dispatcher.bot.first_name} Is the redisigned version of ScoutX and Naruto for the best performance.*"
             f"\n\nBased on [Saithama](https://github.com/AnimeKaizoku/SaitamaRobot) + [suzuya](https://github.com/Godzilla-0/Suzuya_ProBot)."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
@@ -482,7 +482,7 @@ def DaisyX_about_callback(update, context):
             f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of DaisyXBot we are not resposible for anything."
+            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of ScoutXBot we are not resposible for anything."
             f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
@@ -822,7 +822,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        DaisyX_about_callback, pattern=r"aboutmanu_"
+        ScoutX_about_callback, pattern=r"aboutmanu_"
     )
 
     donate_handler = CommandHandler("donate", donate)
