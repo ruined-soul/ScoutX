@@ -34,7 +34,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-from DaisyX import (
+from ScoutX import (
     ALLOW_EXCL,
     BL_CHATS,
     CERT_PATH,
@@ -56,14 +56,14 @@ from DaisyX import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from DaisyX.modules import ALL_MODULES
-from DaisyX.modules.helper_funcs.alternate import typing_action
-from DaisyX.modules.helper_funcs.chat_status import is_user_admin
-from DaisyX.modules.helper_funcs.misc import paginate_modules
-from DaisyX.modules.helper_funcs.readable_time import get_readable_time
+from ScoutX.modules import ALL_MODULES
+from ScoutX.modules.helper_funcs.alternate import typing_action
+from ScoutX.modules.helper_funcs.chat_status import is_user_admin
+from ScoutX.modules.helper_funcs.misc import paginate_modules
+from ScouX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓧 𝓪𝓲𝓻𝓪](https://telegra.ph/file/6887176888e10c47d6c7c.jpg)
+Hello there, I'm [SƈσυƚX](https://telegra.ph/file/5447948a779825eb3f80a.jpg)
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
 
